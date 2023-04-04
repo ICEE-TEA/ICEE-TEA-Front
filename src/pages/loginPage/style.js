@@ -8,6 +8,7 @@ export const backCenter = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 `;
 
 export const WhiteBox = styled.div`
@@ -18,15 +19,53 @@ export const WhiteBox = styled.div`
   background: white;
   border-radius: 2px;
   border-radius: 7px;
+  
 
-  .welcome {
+  .login {
     color: #fe5734;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 45px;
+    display:flex;
+    justify-content:center;
   }
 
   .contentCenter {
     display: flex;
     justify-content: center;
+    flex-direction:column;
+    
+    
   }
+
+  
+    
+  
+
+  .content{
+    display:flex;
+    fl
+  }
+`;
+
+export const emailInput = styled.input`
+  width: 300px;
+  height: 50px;
+  background-color: #F1F1F5;
+  border:0;
+  margin: 70px 0 20px 0;
+  text-indent: 10px;
+  border-radius: 7px;
+`;
+
+export const passwordInput = styled.input`
+  width: 300px;
+  height: 50px;
+  background-color: #F1F1F5;
+  border:0;
+  text-indent: 10px;
+  border-radius: 7px;
+`;
+
+export const confirmButton = styled.button`
+  width: 300px;
 `;

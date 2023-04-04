@@ -42,6 +42,19 @@ export const WhiteBox = styled.div`
   .allContainer {
     margin-top: 10px;
   }
+
+  .signUpContent {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    span {
+      cursor: pointer;
+      font-size: 14px;
+      color: #ff5c5c;
+    }
+  }
 `;
 
 export const emailInput = styled.input`

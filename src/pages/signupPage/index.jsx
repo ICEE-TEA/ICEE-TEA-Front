@@ -11,9 +11,12 @@ function Signup() {
             <span className="login">Sign Up</span>
           </div>
           <div className="content">
-            <S.emailInput placeholder="이름을 입력해주세요" />
+            <S.emailInput placeholder="이름을 입력해주세요." />
             <S.passwordInput placeholder="비밀번호를 입력해주세요." />
-            <C.checkPassword placeholder="비밀번호를 한번 더 입력해주세요" />
+            <C.checkPassword
+              type="password"
+              placeholder="비밀번호를 한번 더 입력해주세요."
+            />
             <S.confirmButton>확인</S.confirmButton>
             <span className="loginBack">LOGIN으로 돌아가기</span>
           </div>

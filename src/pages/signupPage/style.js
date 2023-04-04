@@ -36,7 +36,7 @@ export const WhiteBox2 = styled.div`
   .loginBack {
     cursor: pointer;
     margin-top: 10px;
-    font-weight: 400;
+    font-weight: 500;
     color: #ff5c5c;
     font-size: 14px;
   }

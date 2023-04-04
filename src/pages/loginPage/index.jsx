@@ -11,10 +11,13 @@ function Login() {
           </div>
           <div className="content">
             <S.emailInput placeholder="이메일을 입력해주세요." />
-            <S.passwordInput placeholder="비밀번호를 입력해주세요." />
+            <S.passwordInput
+              type="password"
+              placeholder="비밀번호를 입력해주세요."
+            />
             <S.confirmButton>확인</S.confirmButton>
-            <div>
-              <span className="">Sign Up</span>
+            <div className="signUpContent">
+              <span>Sign Up</span>
             </div>
           </div>
         </div>

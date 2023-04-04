@@ -14,13 +14,12 @@ export const WhiteBox = styled.div`
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
   padding: 2rem;
   width: 380px;
-  height: 450px;
+  height: 400px;
   background: white;
   border-radius: 2px;
   border-radius: 7px;
 
   .login {
-
     color: #fe5734;
     font-weight: bold;
     font-size: 45px;
@@ -38,6 +37,10 @@ export const WhiteBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .allContainer {
+    margin-top: 10px;
   }
 `;
 
@@ -61,9 +64,18 @@ export const passwordInput = styled.input`
 `;
 
 export const confirmButton = styled.button`
+  margin-top: 60px;
   width: 300px;
   height: 50px;
   color: white;
-  background-color: #fe5734;
+  background-color: #ff5c5c;
   border: 0;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 7px;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
 `;

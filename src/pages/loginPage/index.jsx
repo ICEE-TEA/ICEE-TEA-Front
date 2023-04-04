@@ -9,11 +9,9 @@ function Login() {
           <span className="login">LOGIN</span>
         </div>
         <div className="content">
-          <div>
-            <S.emailInput placeholder="이메일을 입력해주세요." />
-            <S.passwordInput placeholder="비밀번호를 입력해주세요." />
-          </div>
-          <S.confirmButton />
+          <S.emailInput placeholder="이메일을 입력해주세요." />
+          <S.passwordInput placeholder="비밀번호를 입력해주세요." />
+          <S.confirmButton>확인</S.confirmButton>
         </div>
       </S.WhiteBox>
     </S.backCenter>

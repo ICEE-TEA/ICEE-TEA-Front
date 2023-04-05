@@ -5,6 +5,7 @@ import Login from "./pages/loginPage";
 import Signup from "./pages/signupPage";
 import Auth from "./pages/authPage";
 import Main from "./pages/mainPage";
+import Payment from "./pages/paymentPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/main" element={<Main />} />
+        <Route path="/payment" element={<Payment />} />
         <Route path="/*" element={<div>404</div>} />
         {/* <Route path="/login" element={<Login />} />
         <Route path="/mypage" element={<myPage />} /> */}

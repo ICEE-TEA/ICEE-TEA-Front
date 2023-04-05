@@ -9,7 +9,6 @@ function Main() {
     <S.backCenter>
       <S.WhiteBox>
         <C.Dialog />
-
         <div className="userContent">
           <FontAwesomeIcon className="imgIcon" icon={faUser} />
           <span>이태랑 님</span>

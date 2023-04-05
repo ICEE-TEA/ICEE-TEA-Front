@@ -12,7 +12,7 @@ function Main() {
 
         <div className="userContent">
           <FontAwesomeIcon className="imgIcon" icon={faUser} />
-          <span>이정우 님</span>
+          <span>이태랑 님</span>
         </div>
         <div className="iceTeaCenter">
           <S.iceTeaImg src="https://media.discordapp.net/attachments/956190154454876183/1092985075253125130/image.png?width=388&height=648" />

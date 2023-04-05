@@ -29,11 +29,13 @@ export const WhiteBox = styled.div`
     top: 3px;
     color: #999999;
     font-size: 14px;
+    cursor: pointer;
   }
 
   span {
     color: #999999;
     font-weight: 500;
+    cursor: pointer;
   }
 
   .iceTeaCenter {

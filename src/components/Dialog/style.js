@@ -82,4 +82,40 @@ export const orderContent = styled.div`
       }
     }
   }
+
+  .totalContent {
+    border-top: 1.1px solid #c5c5c5;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 80px 0 20px 0;
+
+    span {
+      margin-top: 5px;
+      color: #c5c5c5;
+      font-size: 13px;
+    }
+  }
+
+  .orderButton {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin-top: 10px;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ff5c5c;
+      border-radius: 10px;
+      background-color: white;
+      width: 110px;
+      height: 40px;
+      color: #ff5c5c;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
 `;

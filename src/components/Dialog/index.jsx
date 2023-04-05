@@ -17,6 +17,12 @@ function Dialog() {
           <ChooseButton title="Flavor" childs={["복숭아", "레몬", "청포도"]} />
           <ChooseButton title="Size" childs={["300ml", "500ml"]} />
           <ChooseButton title="Pay" childs={["계좌이체", "현금결제"]} />
+          <div className="totalContent">
+            <span>Total : 500W</span>
+          </div>
+          <div className="orderButton">
+            <button>주문하기</button>
+          </div>
         </S.orderContent>
       </S.orderBox>
     </dialog>

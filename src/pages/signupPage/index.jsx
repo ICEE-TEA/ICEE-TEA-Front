@@ -1,4 +1,4 @@
-import * as S from "../loginPage/style";
+import * as S from "../../components/style";
 import * as C from "./style";
 import React from "react";
 

@@ -17,7 +17,7 @@ export const WhiteBox = styled.div`
   height: 630px;
   background: #191919;
   background-color: rgba(0, 0, 0, 0.3); /* background 투명도 지정 */
-  background-size: cover;
+
   border-radius: 2px;
   border-radius: 7px;
   display: flex;
@@ -54,9 +54,11 @@ export const orderContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    color: black;
 
     span {
-      font-weight: 500;
+      font-weight: 400;
+      color: black;
     }
 
     .fruitFlavor {
@@ -64,6 +66,7 @@ export const orderContent = styled.div`
 
       .fruit {
         margin-top: 10px;
+        margin-right: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -75,11 +78,6 @@ export const orderContent = styled.div`
         font-size: 14px;
         font-weight: 600;
         cursor: pointer;
-      }
-
-      .lemon {
-        margin-left: 10px;
-        margin-right: 10px;
       }
     }
   }

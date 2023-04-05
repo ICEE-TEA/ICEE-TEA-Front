@@ -5,7 +5,6 @@ import Login from "./pages/loginPage";
 import Signup from "./pages/signupPage";
 import Auth from "./pages/authPage";
 import Main from "./pages/mainPage";
-import Order from "./pages/orderPage";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/main" element={<Main />} />
-        <Route path="/order" element={<Order />} />
         {/* <Route path="/login" element={<Login />} />
         <Route path="/mypage" element={<myPage />} /> */}
       </Routes>

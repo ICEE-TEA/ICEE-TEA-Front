@@ -18,8 +18,11 @@ function Auth() {
               type="password"
               placeholder="인증번호를 입력해주세요."
             />
+            <div className="authConfirm"></div>
+            <div className="signUpContent">
+              <a>인증번호가 일치하지 않습니다.</a>
+            </div>
             <S.confirmButton>확인</S.confirmButton>
-            <div className="signUpContent"></div>
           </div>
         </div>
       </S.WhiteBox>

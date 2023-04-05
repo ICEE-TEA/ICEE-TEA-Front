@@ -54,6 +54,19 @@ export const WhiteBox = styled.div`
       font-size: 14px;
       color: #ff5c5c;
     }
+
+    a {
+      font-size: 14px;
+      color: #ff5c5c;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+
+  .signUpContent {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
   }
 `;
 

@@ -1,4 +1,4 @@
-import * as S from "./style";
+import * as S from "../../components/style";
 import React from "react";
 
 function Login() {

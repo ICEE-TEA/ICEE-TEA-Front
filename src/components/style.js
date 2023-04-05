@@ -54,6 +54,19 @@ export const WhiteBox = styled.div`
       font-size: 14px;
       color: #ff5c5c;
     }
+
+    a {
+      font-size: 14px;
+      color: #ff5c5c;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+
+  .signUpContent {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
   }
 `;
 
@@ -65,6 +78,7 @@ export const emailInput = styled.input`
   margin: 70px 0 20px 0;
   text-indent: 10px;
   border-radius: 7px;
+  outline: none;
 `;
 
 export const passwordInput = styled.input`
@@ -74,6 +88,7 @@ export const passwordInput = styled.input`
   border: 0;
   text-indent: 10px;
   border-radius: 7px;
+  outline: none;
 `;
 
 export const confirmButton = styled.button`
@@ -87,8 +102,40 @@ export const confirmButton = styled.button`
   font-size: 17px;
   border-radius: 7px;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     color: black;
   }
+`;
+
+export const emailInputAuth = styled.input`
+  width: 220px;
+  height: 50px;
+  background-color: #f1f1f5;
+  border: 0;
+  margin: 70px 0 20px 0;
+  text-indent: 10px;
+  border-radius: 7px;
+  outline: none;
+`;
+
+export const authButton = styled.button`
+  @import url(fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+  .notosanskr * {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  width: 70px;
+  height: 50px;
+  border-radius: 7px;
+  font-weight: 600;
+  height: 50px;
+  background-color: #ff5c5c;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
 `;

@@ -44,24 +44,24 @@ export const orderContent = styled.div`
     .delete {
       color: black;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 13px;
     }
   }
 
-  .flavorContent {
+  .chooseContent {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 13px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     color: black;
 
     span {
-      font-weight: 400;
+      font-weight: 500;
       color: black;
     }
 
-    .fruitFlavor {
+    .choose {
       display: flex;
 
       .fruit {
@@ -73,10 +73,11 @@ export const orderContent = styled.div`
         border: 1px solid #c5c5c5;
         border-radius: 10px;
         width: 85px;
+
         height: 34px;
         color: #c5c5c5;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: bolder;
         cursor: pointer;
       }
     }

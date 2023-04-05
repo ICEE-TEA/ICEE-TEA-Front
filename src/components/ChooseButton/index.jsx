@@ -3,9 +3,9 @@ import * as S from "../Dialog/style";
 
 function ChooseButton({ title, childs }) {
   return (
-    <div className="flavorContent">
+    <div className="chooseContent">
       <span>{title}</span>
-      <div className="fruitFlavor">
+      <div className="choose">
         {childs.map((child) => {
           return <div className="fruit">{child}</div>;
         })}

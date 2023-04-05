@@ -34,7 +34,7 @@ export const orderBox = styled.div`
 `;
 
 export const orderContent = styled.div`
-  padding: 20px 25px 20px 40px;
+  padding: 20px 20px 20px 40px;
   height: 45vh;
 
   .deleteContent {
@@ -44,8 +44,7 @@ export const orderContent = styled.div`
     .delete {
       color: black;
       cursor: pointer;
-      font-size: 17px;
-      font-weight: 100;
+      font-size: 15px;
     }
   }
 
@@ -70,7 +69,7 @@ export const orderContent = styled.div`
         align-items: center;
         border: 1px solid #c5c5c5;
         border-radius: 10px;
-        width: 80px;
+        width: 85px;
         height: 34px;
         color: #c5c5c5;
         font-size: 14px;
@@ -79,8 +78,8 @@ export const orderContent = styled.div`
       }
 
       .lemon {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
   }

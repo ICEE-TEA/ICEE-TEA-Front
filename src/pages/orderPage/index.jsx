@@ -20,7 +20,6 @@ function Order() {
                 <div className="greenGrape fruit">청포도</div>
               </div>
             </div>
-            asd
           </S.orderContent>
         </S.orderBox>
       </S.WhiteBox>

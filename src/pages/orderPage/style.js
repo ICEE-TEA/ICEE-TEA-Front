@@ -13,11 +13,75 @@ export const backCenter = styled.div`
 export const WhiteBox = styled.div`
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
   padding: 2rem;
-  width: 450px;
-  height: 600px;
+  width: 480px;
+  height: 630px;
   background: #191919;
-  opacity: 30%;
+  background-color: rgba(0, 0, 0, 0.3); /* background 투명도 지정 */
   background-size: cover;
   border-radius: 2px;
   border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const orderBox = styled.div`
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
+  width: 370px;
+  height: 460px;
+  background-color: white;
+  border-radius: 10px;
+`;
+
+export const orderContent = styled.div`
+  padding: 20px 25px 20px 40px;
+  height: 45vh;
+
+  .deleteContent {
+    display: flex;
+    justify-content: flex-end;
+
+    .delete {
+      color: black;
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: 100;
+    }
+  }
+
+  .flavorContent {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    span {
+      font-weight: 500;
+    }
+
+    .fruitFlavor {
+      display: flex;
+
+      .fruit {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #c5c5c5;
+        border-radius: 10px;
+        width: 80px;
+        height: 34px;
+        color: #c5c5c5;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .lemon {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
 `;

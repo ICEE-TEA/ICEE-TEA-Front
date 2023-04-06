@@ -3,9 +3,18 @@ import * as S from "./style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import ChooseButton from "../ChooseButton";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 function Dialog() {
   const [total, setTotal] = useState(["700원", "1000원"]);
+  const [confirm, setConfirm] = useState("");
+
+  const navigate = useNavigate();
+
+  const onClickConfirm = (page) => {
+    navigate(page);
+  };
 
   return (
     <dialog style={{ border: "0", borderRadius: "7px", padding: "0" }}>
@@ -23,7 +32,17 @@ function Dialog() {
             <span>Total : 500W</span>
           </div>
           <div className="orderButton">
-            <button>주문하기</button>
+            <button
+              onClick={() => {
+                setConfirm(window.confirm("주문을 하시겠습니까?"));
+                console.log(confirm);
+                if (confirm === false) {
+                  onClickConfirm("/payment");
+                }
+              }}
+            >
+              주문하기
+            </button>
           </div>
         </S.orderContent>
       </S.orderBox>

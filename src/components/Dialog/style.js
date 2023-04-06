@@ -25,6 +25,23 @@ export const WhiteBox = styled.div`
   align-items: center;
 `;
 
+export const Child = styled.div`
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c5c5c5;
+  border-radius: 10px;
+  width: 85px;
+
+  height: 34px;
+  color: #c5c5c5;
+  font-size: 14px;
+  font-weight: bolder;
+  cursor: pointer;
+`;
+
 export const orderBox = styled.div`
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
   width: 370px;
@@ -75,9 +92,9 @@ export const orderContent = styled.div`
         width: 85px;
 
         height: 34px;
-        color: #c5c5c5;
+
         font-size: 14px;
-        font-weight: bolder;
+        font-weight: 600;
         cursor: pointer;
       }
     }

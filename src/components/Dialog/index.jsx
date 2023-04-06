@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import ChooseButton from "../ChooseButton";
 
 function Dialog() {
+  const [total, setTotal] = useState(["700원", "1000원"]);
+
   return (
     <dialog style={{ border: "0", borderRadius: "7px", padding: "0" }}>
       <S.orderBox>

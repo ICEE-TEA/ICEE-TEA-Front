@@ -23,7 +23,7 @@ function Dialog() {
             <span>Total : 500W</span>
           </div>
           <div className="orderButton">
-            <button>주문하기</button>
+            <button onClick={}>주문하기</button>
           </div>
         </S.orderContent>
       </S.orderBox>

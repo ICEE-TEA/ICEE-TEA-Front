@@ -94,7 +94,7 @@ export const orderContent = styled.div`
         height: 34px;
 
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 700;
         cursor: pointer;
       }
     }
@@ -131,8 +131,13 @@ export const orderContent = styled.div`
       height: 40px;
       color: #ff5c5c;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
+
+      &:hover {
+        background-color: #ff5c5c;
+        color: white;
+      }
     }
   }
 `;

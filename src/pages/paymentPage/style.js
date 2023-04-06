@@ -48,5 +48,4 @@ export const WhiteBox = styled.div`
 export const iceImg = styled.img`
     width: :130px;
     height: 130px;
-
 `;

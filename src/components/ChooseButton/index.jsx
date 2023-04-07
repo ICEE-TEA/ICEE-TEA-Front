@@ -7,6 +7,11 @@ import styled from "@emotion/styled";
 
 function ChooseButton({ title, childs }) {
   const [selected, setSelected] = useState("");
+  const [price, setPrice] = useState("");
+
+  const Pricing = (value) => {
+    const data = price;
+  };
 
   const selectStyle = (value) => {
     return (
@@ -22,18 +27,27 @@ function ChooseButton({ title, childs }) {
     <div className="chooseContent">
       <span>{title}</span>
       <div className="choose">
-        {childs.map((child, id) => {
+        {childs.map((child) => {
           return (
-            <S.Child
-              key={id}
-              className="fruit"
-              onClick={() => {
-                setSelected(child);
-              }}
-              css={() => selectStyle(child)}
-            >
-              {child}
-            </S.Child>
+            <>
+              <S.Child
+                key={child.id}
+                className="fruit"
+                onClick={() => {
+                  setSelected(child);
+                  if (child === "300ml") {
+                    Pricing(setPrice("500원"));
+                    console.log("5");
+                  } else {
+                    Pricing(setPrice("800원"));
+                    console.log("8");
+                  }
+                }}
+                css={() => selectStyle(child)}
+              >
+                {child}
+              </S.Child>
+            </>
           );
         })}
       </div>

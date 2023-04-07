@@ -34,7 +34,7 @@ function Dialog() {
           <ChooseButton title="Size" childs={["300ml", "500ml"]} />
           <ChooseButton title="Pay" childs={["계좌이체", "현금결제"]} />
           <div className="totalContent">
-            <span>Total : 500W</span>
+            <span>asd</span>
           </div>
           <div className="orderButton">
             <button
@@ -47,6 +47,7 @@ function Dialog() {
                 if (window.confirm("주문을 하시겠습니까?")) {
                   setConfirm(true);
                   console.log(confirm);
+                  alert("주문이 완료되었습니다!");
                   onClickConfirm("/payment");
                 } else {
                   setConfirm(false);

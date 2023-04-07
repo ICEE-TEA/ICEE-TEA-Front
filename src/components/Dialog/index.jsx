@@ -16,7 +16,13 @@ function Dialog() {
   };
 
   return (
-    <dialog style={{ border: "0", borderRadius: "7px", padding: "0" }}>
+    <dialog
+      style={{
+        border: "0",
+        borderRadius: "7px",
+        padding: "0",
+      }}
+    >
       <S.orderBox>
         <S.orderContent>
           <form className="deleteContent">

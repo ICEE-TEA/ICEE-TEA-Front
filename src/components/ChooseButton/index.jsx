@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import * as S from "../Dialog/style";
 import Dialog from "../Dialog";
-import ChooseText from "./text";
 import { css, jsx } from "@emotion/react";
 import styled from "@emotion/styled";
 
@@ -28,10 +27,10 @@ function ChooseButton({ title, childs }) {
             <S.Child
               key={id}
               className="fruit"
-              css={() => selectStyle(child)}
               onClick={() => {
                 setSelected(child);
               }}
+              css={() => selectStyle(child)}
             >
               {child}
             </S.Child>

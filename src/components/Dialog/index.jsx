@@ -3,7 +3,6 @@ import * as S from "./style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import ChooseButton from "../ChooseButton";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router";
 
 function Dialog() {
@@ -34,10 +33,18 @@ function Dialog() {
           <div className="orderButton">
             <button
               onClick={() => {
-                setConfirm(window.confirm("주문을 하시겠습니까?"));
-                console.log(confirm);
-                if (confirm === false) {
+                // setConfirm(window.confirm("주문을 하시겠습니까?"));
+                // console.log(confirm);
+                // if (confirm === false) {
+                //   onClickConfirm("/payment");
+                // }
+                if (window.confirm("주문을 하시겠습니까?")) {
+                  setConfirm(true);
+                  console.log(confirm);
                   onClickConfirm("/payment");
+                } else {
+                  setConfirm(false);
+                  console.log(confirm);
                 }
               }}
             >

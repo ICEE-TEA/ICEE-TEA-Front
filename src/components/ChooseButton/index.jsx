@@ -9,10 +9,6 @@ function ChooseButton({ title, childs }) {
   const [selected, setSelected] = useState("");
   const [price, setPrice] = useState("");
 
-  const Pricing = (value) => {
-    const data = price;
-  };
-
   const selectStyle = (value) => {
     return (
       value === selected &&
@@ -36,11 +32,11 @@ function ChooseButton({ title, childs }) {
                 onClick={() => {
                   setSelected(child);
                   if (child === "300ml") {
-                    Pricing(setPrice("500원"));
-                    console.log("5");
-                  } else {
-                    Pricing(setPrice("800원"));
-                    console.log("8");
+                    setPrice("500원");
+                    console.log("500원");
+                  } else if (child === "500ml") {
+                    setPrice("800원");
+                    console.log("800원");
                   }
                 }}
                 css={() => selectStyle(child)}

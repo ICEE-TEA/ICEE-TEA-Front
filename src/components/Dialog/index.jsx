@@ -9,6 +9,8 @@ function Dialog() {
   const [total, setTotal] = useState(["700원", "1000원"]);
   const [confirm, setConfirm] = useState("");
 
+  const [data, setData] = useState("");
+
   const navigate = useNavigate();
 
   const onClickConfirm = (page) => {

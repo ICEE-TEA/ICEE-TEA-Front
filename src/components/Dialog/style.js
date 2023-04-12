@@ -110,7 +110,7 @@ export const orderContent = styled.div`
     span {
       margin-top: 5px;
       color: #c5c5c5;
-      font-size: 13px;
+      font-size: 15px;
     }
   }
 

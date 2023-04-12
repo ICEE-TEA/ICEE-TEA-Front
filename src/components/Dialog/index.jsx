@@ -6,7 +6,7 @@ import ChooseButton from "../ChooseButton";
 import { useNavigate } from "react-router";
 
 function Dialog() {
-  const [total, setTotal] = useState(["700원", "1000원"]);
+  const [total, setTotal] = useState("");
   const [confirm, setConfirm] = useState("");
 
   const [data, setData] = useState("");
@@ -33,10 +33,14 @@ function Dialog() {
             </button>
           </form>
           <ChooseButton title="Flavor" childs={["복숭아", "레몬", "청포도"]} />
-          <ChooseButton title="Size" childs={["300ml", "500ml"]} />
+          <ChooseButton
+            PriceProps={setTotal}
+            title="Size"
+            childs={["300ml", "500ml"]}
+          />
           <ChooseButton title="Pay" childs={["계좌이체", "현금결제"]} />
           <div className="totalContent">
-            <span>asd</span>
+            <span>{total}</span>
           </div>
           <div className="orderButton">
             <button

@@ -5,9 +5,9 @@ import Dialog from "../Dialog";
 import { css, jsx } from "@emotion/react";
 import styled from "@emotion/styled";
 
-function ChooseButton({ title, childs }) {
+function ChooseButton({ title, childs, PriceProps }) {
   const [selected, setSelected] = useState("");
-  const [price, setPrice] = useState("");
+  let price;
 
   const selectStyle = (value) => {
     return (
@@ -19,31 +19,34 @@ function ChooseButton({ title, childs }) {
     );
   };
 
+  const Select = (child) => {
+    setSelected(child);
+    if (child === "300ml") {
+      price = "500원";
+      console.log("500원");
+    } else if (child === "500ml") {
+      price = "800원";
+      console.log("800원");
+    }
+    title === "Size" && PriceProps(price);
+  };
+
   return (
     <div className="chooseContent">
       <span>{title}</span>
       <div className="choose">
-        {childs.map((child) => {
+        {childs.map((child, id) => {
+          const rand = Math.random();
           return (
-            <>
+            <React.Fragment key={rand}>
               <S.Child
-                key={child.id}
                 className="fruit"
-                onClick={() => {
-                  setSelected(child);
-                  if (child === "300ml") {
-                    setPrice("500원");
-                    console.log("500원");
-                  } else if (child === "500ml") {
-                    setPrice("800원");
-                    console.log("800원");
-                  }
-                }}
+                onClick={() => Select(child)}
                 css={() => selectStyle(child)}
               >
                 {child}
               </S.Child>
-            </>
+            </React.Fragment>
           );
         })}
       </div>

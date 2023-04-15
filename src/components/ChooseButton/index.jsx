@@ -22,11 +22,11 @@ function ChooseButton({ title, childs, PriceProps }) {
   const Select = (child) => {
     setSelected(child);
     if (child === "300ml") {
-      price = "500원";
-      console.log("500원");
+      price = "700원";
+      console.log("700원");
     } else if (child === "500ml") {
-      price = "800원";
-      console.log("800원");
+      price = "1000원";
+      console.log("1000원");
     }
     title === "Size" && PriceProps(price);
   };

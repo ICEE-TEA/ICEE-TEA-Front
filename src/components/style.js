@@ -68,6 +68,10 @@ export const WhiteBox = styled.div`
     display: flex;
     justify-content: flex-end;
   }
+
+  /* .asd {
+    visibility: hidden;
+  } */
 `;
 
 export const emailInput = styled.input`
@@ -75,7 +79,7 @@ export const emailInput = styled.input`
   height: 50px;
   background-color: #f1f1f5;
   border: 0;
-  margin: 70px 0 20px 0;
+  margin: 70px 0 0 0;
   text-indent: 10px;
   border-radius: 7px;
   outline: none;

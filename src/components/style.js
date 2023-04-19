@@ -44,9 +44,9 @@ export const WhiteBox = styled.div`
   }
 
   .signUpContent {
-    width: 75%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    margin-left: 60px;
     margin-top: 10px;
 
     span {
@@ -69,9 +69,35 @@ export const WhiteBox = styled.div`
     justify-content: flex-end;
   }
 
-  /* .asd {
+  .errorContainer {
+    width: 78%;
+
+    position: relative;
+    margin-top: 2px;
+  }
+
+  .errorEmail {
+    color: #ff5c5c;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .hidden {
     visibility: hidden;
-  } */
+  }
+
+  .errorPassword {
+    color: #ff5c5c;
+    font-size: 11px;
+
+    position: relative;
+    bottom: 2px;
+    font-weight: 500;
+  }
+
+  .nextContainer {
+    height: 100px;
+  }
 `;
 
 export const emailInput = styled.input`
@@ -96,7 +122,6 @@ export const passwordInput = styled.input`
 `;
 
 export const confirmButton = styled.button`
-  margin-top: 60px;
   width: 300px;
   height: 50px;
   color: white;
@@ -107,6 +132,7 @@ export const confirmButton = styled.button`
   border-radius: 7px;
   cursor: pointer;
   outline: none;
+  margin-top: 20px;
 
   &:hover {
     color: black;

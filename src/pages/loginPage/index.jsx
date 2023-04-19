@@ -55,7 +55,11 @@ function Login() {
                 emailCheck(e.target.value);
               }}
             />
-            <span className="errorContent">학교 이메일을 다시 확인하세요</span>
+            <div className="errorContainer">
+              <span className="errorEmail hidden">
+                학교 이메일을 다시 확인하세요.
+              </span>
+            </div>
             <S.passwordInput
               onChange={(e) => {
                 setPassword(e.target.value);
@@ -64,15 +68,22 @@ function Login() {
               type="password"
               placeholder="비밀번호를 입력해주세요."
             />
-            <S.confirmButton>확인</S.confirmButton>
-            <div className="signUpContent">
-              <span
-                onClick={() => {
-                  onClickConfirm("/signup");
-                }}
-              >
-                Sign Up
+            <div className="errorContainer pwError">
+              <span className="errorPassword hidden">
+                비밀번호를 다시 확인해주세요.
               </span>
+            </div>
+            <div className="nextContainer">
+              <S.confirmButton>확인</S.confirmButton>
+              <div className="signUpContent">
+                <span
+                  onClick={() => {
+                    onClickConfirm("/signup");
+                  }}
+                >
+                  Sign Up
+                </span>
+              </div>
             </div>
           </div>
         </div>

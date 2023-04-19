@@ -23,6 +23,29 @@ export const WhiteBox2 = styled.div`
     flex-direction: column;
   }
 
+  .errorName {
+    color: #ff5c5c;
+    font-size: 11px;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .errorPasswordCheck {
+    color: #ff5c5c;
+    font-size: 11px;
+    position: relative;
+    bottom: 2px;
+    font-weight: 500;
+  }
+
+  .errorPasswordReg {
+    color: #ff5c5c;
+    font-size: 11px;
+    position: relative;
+    bottom: 2px;
+    font-weight: 500;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -39,15 +62,51 @@ export const WhiteBox2 = styled.div`
     font-weight: 500;
     color: #ff5c5c;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .errorContainer {
+    width: 78%;
+    position: relative;
+    margin-top: 2px;
+  }
+
+  .errorEmail {
+    color: #ff5c5c;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .errorPassword {
+    color: #ff5c5c;
+    font-size: 11px;
+
+    position: relative;
+    bottom: 2px;
+    font-weight: 500;
+  }
+
+  .nextContainer {
+    height: 100px;
+  }
+
+  .next {
+    display: flex;
+    flex-direction: column;
   }
 `;
 
 export const checkPassword = styled.input`
-  margin-top: 20px;
   width: 300px;
   height: 50px;
   background-color: #f1f1f5;
   border: 0;
   text-indent: 10px;
   border-radius: 7px;
+  outline: none;
 `;

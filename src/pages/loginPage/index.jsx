@@ -30,17 +30,17 @@ function Login() {
     }
   };
 
-  const passwordCheck = (password) => {
-    if (password.match(pwCheck) === null) {
-      //형식에 맞지 않을 경우 아래 콘솔 출력
-      console.log("비밀번호 형식을 확인해주세요");
-      document.querySelector(".errorPassword").classList.remove("hidden"); // hidden 클래스 삭제
-    } else {
-      // 맞을 경우 출력
-      console.log("비밀번호 형식이 맞아요");
-      document.querySelector(".errorPassword").classList.add("hidden"); // hidden 클래스 추가
-    }
-  };
+  // const passwordCheck = (password) => {
+  //   if (password.match(pwCheck) === null) {
+  //     //형식에 맞지 않을 경우 아래 콘솔 출력
+  //     console.log("비밀번호 형식을 확인해주세요");
+  //     document.querySelector(".errorPassword").classList.remove("hidden"); // hidden 클래스 삭제
+  //   } else {
+  //     // 맞을 경우 출력
+  //     console.log("비밀번호 형식이 맞아요");
+  //     document.querySelector(".errorPassword").classList.add("hidden"); // hidden 클래스 추가
+  //   }
+  // };
 
   return (
     <S.backCenter>
@@ -63,10 +63,6 @@ function Login() {
               </span>
             </div>
             <S.passwordInput
-              onChange={(e) => {
-                setPassword(e.target.value);
-                passwordCheck(e.target.value);
-              }}
               type="password"
               placeholder="비밀번호를 입력해주세요."
             />

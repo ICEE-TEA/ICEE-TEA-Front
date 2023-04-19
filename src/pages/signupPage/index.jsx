@@ -122,6 +122,7 @@ function Signup() {
                   //위 코드에서 if (!name || !password || !CheckPassword) 부분을 추가하여 input 값이 null인 경우 console.log()를 실행하고 함수를 종료.
                   //그렇지 않은 경우에만 navigate 함수가 실행.
                   if (allHidden) {
+                    alert("회원가입이 정상적으로 되었습니다!");
                     onClickConfirm("/login");
                   }
                 }}

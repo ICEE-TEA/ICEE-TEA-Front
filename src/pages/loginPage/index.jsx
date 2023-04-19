@@ -22,10 +22,11 @@ function Login() {
     if (email.match(idCheck) === null) {
       //형식에 맞지 않을 경우 아래 콘솔 출력
       console.log("학교 이메일 형식을 확인해주세요");
-      return;
+      document.querySelector(".errorEmail").classList.remove("hidden"); // hidden 클래스 삭제
     } else {
       // 맞을 경우 출력
       console.log("학교 이메일이 맞습니다!");
+      document.querySelector(".errorEmail").classList.add("hidden"); // hidden 클래스 추가
     }
   };
 
@@ -33,10 +34,12 @@ function Login() {
     if (password.match(pwCheck) === null) {
       //형식에 맞지 않을 경우 아래 콘솔 출력
       console.log("비밀번호 형식을 확인해주세요");
+      document.querySelector(".errorPassword").classList.remove("hidden"); // hidden 클래스 삭제
       return;
     } else {
       // 맞을 경우 출력
       console.log("비밀번호 형식이 맞아요");
+      document.querySelector(".errorPassword").classList.add("hidden"); // hidden 클래스 추가
     }
   };
 
@@ -49,7 +52,7 @@ function Login() {
           </div>
           <div className="content">
             <S.emailInput
-              placeholder="이메일을 입력해주세요."
+              placeholder="이메일을 입력해주세요. (s22051@gsm.hs.kr)"
               onChange={(e) => {
                 setEmail(e.target.value);
                 emailCheck(e.target.value);

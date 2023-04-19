@@ -73,7 +73,6 @@ export const WhiteBox = styled.div`
     width: 78%;
 
     position: relative;
-    margin-top: 2px;
   }
 
   .errorEmail {

@@ -4,6 +4,9 @@ import React from "react";
 import { useNavigate } from "react-router";
 
 function Signup() {
+  const nameCheck = /^([가-힣]{2,3})$/;
+  const pwCheck = /^[A-Za-z0-9]{8,20}$/;
+
   const navigate = useNavigate();
 
   const onClickConfirm = (page) => {

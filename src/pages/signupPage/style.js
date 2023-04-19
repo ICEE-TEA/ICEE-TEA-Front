@@ -28,6 +28,7 @@ export const WhiteBox2 = styled.div`
     font-size: 11px;
     position: relative;
     font-weight: 500;
+    bottom: 2px;
   }
 
   .errorPasswordCheck {

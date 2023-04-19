@@ -35,7 +35,6 @@ function Login() {
       //형식에 맞지 않을 경우 아래 콘솔 출력
       console.log("비밀번호 형식을 확인해주세요");
       document.querySelector(".errorPassword").classList.remove("hidden"); // hidden 클래스 삭제
-      return;
     } else {
       // 맞을 경우 출력
       console.log("비밀번호 형식이 맞아요");
@@ -52,7 +51,7 @@ function Login() {
           </div>
           <div className="content">
             <S.emailInput
-              placeholder="이메일을 입력해주세요. (s22051@gsm.hs.kr)"
+              placeholder="이메일을 입력해주세요."
               onChange={(e) => {
                 setEmail(e.target.value);
                 emailCheck(e.target.value);
@@ -81,7 +80,7 @@ function Login() {
               <div className="signUpContent">
                 <span
                   onClick={() => {
-                    onClickConfirm("/signup");
+                    onClickConfirm("/auth");
                   }}
                 >
                   Sign Up

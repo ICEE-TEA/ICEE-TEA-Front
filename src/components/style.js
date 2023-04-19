@@ -51,8 +51,9 @@ export const WhiteBox = styled.div`
 
     span {
       cursor: pointer;
-      font-size: 14px;
+      font-size: 15px;
       color: #ff5c5c;
+      font-weight: 500;
     }
 
     a {
@@ -60,13 +61,14 @@ export const WhiteBox = styled.div`
       color: #ff5c5c;
       position: relative;
       bottom: 5px;
+      left: 30px;
     }
   }
 
   .signUpContent {
-    width: 80%;
+    width: 60%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .errorContainer {

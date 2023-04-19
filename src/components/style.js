@@ -44,15 +44,16 @@ export const WhiteBox = styled.div`
   }
 
   .signUpContent {
-    width: 75%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    margin-left: 60px;
     margin-top: 10px;
 
     span {
       cursor: pointer;
-      font-size: 14px;
+      font-size: 15px;
       color: #ff5c5c;
+      font-weight: 500;
     }
 
     a {
@@ -60,13 +61,43 @@ export const WhiteBox = styled.div`
       color: #ff5c5c;
       position: relative;
       bottom: 5px;
+      left: 30px;
     }
   }
 
   .signUpContent {
-    width: 80%;
+    width: 60%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+  }
+
+  .errorContainer {
+    width: 78%;
+
+    position: relative;
+  }
+
+  .errorEmail {
+    color: #ff5c5c;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .errorPassword {
+    color: #ff5c5c;
+    font-size: 11px;
+
+    position: relative;
+    bottom: 2px;
+    font-weight: 500;
+  }
+
+  .nextContainer {
+    height: 100px;
   }
 `;
 
@@ -75,7 +106,7 @@ export const emailInput = styled.input`
   height: 50px;
   background-color: #f1f1f5;
   border: 0;
-  margin: 70px 0 20px 0;
+  margin: 70px 0 0 0;
   text-indent: 10px;
   border-radius: 7px;
   outline: none;
@@ -92,7 +123,6 @@ export const passwordInput = styled.input`
 `;
 
 export const confirmButton = styled.button`
-  margin-top: 60px;
   width: 300px;
   height: 50px;
   color: white;
@@ -103,6 +133,7 @@ export const confirmButton = styled.button`
   border-radius: 7px;
   cursor: pointer;
   outline: none;
+  margin-top: 20px;
 
   &:hover {
     color: black;

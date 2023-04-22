@@ -101,12 +101,34 @@ export const WhiteBox = styled.div`
   }
 `;
 
+export const fixEmail = styled.input`
+  margin-top: 30px;
+  width: 300px;
+  height: 50px;
+  background-color: #f1f1f5;
+  border: 0;
+  text-indent: 10px;
+  border-radius: 7px;
+  outline: none;
+`;
+
 export const emailInput = styled.input`
   width: 300px;
   height: 50px;
   background-color: #f1f1f5;
   border: 0;
   margin: 70px 0 0 0;
+  text-indent: 10px;
+  border-radius: 7px;
+  outline: none;
+`;
+
+export const SignEmailInput = styled.input`
+  width: 300px;
+  height: 50px;
+  background-color: #f1f1f5;
+  border: 0;
+  margin: 20px 0 0 0;
   text-indent: 10px;
   border-radius: 7px;
   outline: none;

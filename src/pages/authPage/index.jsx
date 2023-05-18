@@ -1,8 +1,18 @@
 import React from "react";
 import * as S from "../../components/style";
+import { useState } from "react";
 
 function Auth() {
-  const sendEmail = () => {};
+  const [email, setEmail] = useState("");
+  const idCheck = /^[s][0-9]{2}[0][0-9]{2}@[g][s][m][.][h][s][.][k][r]$/;
+
+  const sendEmail = () => {
+    if (idCheck.test(email)) {
+      console.log("이메일 형식이 올바릅니다.");
+    } else {
+      alert("이메일 형식을 다시 확인해주세요. ex) s2x0xx@gsm.hs.kr");
+    }
+  };
 
   return (
     <S.backCenter>
@@ -13,8 +23,13 @@ function Auth() {
           </div>
           <div className="content">
             <div>
-              <S.emailInputAuth placeholder="이메일을 입력해주세요." />
-              <S.authButton>인증</S.authButton>
+              <S.emailInputAuth
+                placeholder="이메일을 입력해주세요. "
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+              <S.authButton onClick={sendEmail}>인증</S.authButton>
             </div>
             <S.passwordInput
               type="password"

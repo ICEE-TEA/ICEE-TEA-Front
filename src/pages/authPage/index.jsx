@@ -2,6 +2,8 @@ import React from "react";
 import * as S from "../../components/style";
 
 function Auth() {
+  const sendEmail = () => {};
+
   return (
     <S.backCenter>
       <S.WhiteBox>

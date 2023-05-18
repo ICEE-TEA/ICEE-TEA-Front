@@ -12,7 +12,7 @@ function Signup() {
 
   const nameReg = /^([가-힣]{2,3})$/;
   // const pwCheck = /^[A-Za-z0-9]{8,20}$/;
-  const pwCheck = /^[A-Za-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]{8,20}$/;
+  const pwCheck = /^[A-Za-z0-9!@$%^&*()_+\-\[\]{};:\\|,.\/?]{8,20}$/;
 
   const navigate = useNavigate();
 
@@ -60,7 +60,9 @@ function Signup() {
             <span className="login">Sign Up</span>
           </div>
           <div className="content">
-            <S.emailInput
+            <S.fixEmail />
+
+            <S.SignEmailInput
               className="email"
               placeholder="이름을 입력해주세요."
               onChange={(e) => {
@@ -117,6 +119,7 @@ function Signup() {
                   // input 값이 null인지 체크
                   if (!name || !password || !CheckPassword) {
                     console.log("모든 항목을 입력해주세요.");
+                    alert("정보를 바르게 입력해주세요.");
                     return;
                   }
                   //위 코드에서 if (!name || !password || !CheckPassword) 부분을 추가하여 input 값이 null인 경우 console.log()를 실행하고 함수를 종료.

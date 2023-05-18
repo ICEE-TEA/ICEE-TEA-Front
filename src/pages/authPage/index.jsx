@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "../../components/style";
 import { useState } from "react";
+import axios from "axios";
 
 function Auth() {
   const [email, setEmail] = useState("");
@@ -8,7 +9,17 @@ function Auth() {
 
   const sendEmail = () => {
     if (idCheck.test(email)) {
-      console.log("이메일 형식이 올바릅니다.");
+      axios
+        .post("", {
+          Header: {},
+          body: { email: email },
+        })
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((error) => {
+          alert("실패");
+        });
     } else {
       alert("이메일 형식을 다시 확인해주세요. ex) s2x0xx@gsm.hs.kr");
     }

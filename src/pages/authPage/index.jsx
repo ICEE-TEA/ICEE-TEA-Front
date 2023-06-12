@@ -10,15 +10,20 @@ function Auth() {
   const sendEmail = () => {
     if (idCheck.test(email)) {
       axios
-        .post("", {
-          Header: {},
-          body: { email: email },
-        })
+        .post(
+          "https://port-0-icee-tea-server-duzu222alg58k27h.sel3.cloudtype.app/",
+          {
+            header: {},
+            body: {
+              email: email,
+            },
+          }
+        )
         .then((response) => {
           console.log(response.data);
         })
         .catch((error) => {
-          alert("실패");
+          console.log(error);
         });
     } else {
       alert("이메일 형식을 다시 확인해주세요. ex) s2x0xx@gsm.hs.kr");

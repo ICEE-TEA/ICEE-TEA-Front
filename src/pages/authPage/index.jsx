@@ -7,24 +7,14 @@ function Auth() {
   const [email, setEmail] = useState("");
   const idCheck = /^[s][0-9]{2}[0][0-9]{2}@[g][s][m][.][h][s][.][k][r]$/;
 
-  const sendEmail = () => {
+  const sendEmail = async () => {
     if (idCheck.test(email)) {
-      axios
-        .post(
-          "https://port-0-icee-tea-server-duzu222alg58k27h.sel3.cloudtype.app/",
-          {
-            header: {},
-            body: {
-              email: email,
-            },
-          }
-        )
-        .then((response) => {
-          console.log(response.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      const res = await axios.post("http://10.82.21.26:8080/", {
+        header: {},
+        body: { email },
+      });
+      const data = res.data;
+      console.log(res);
     } else {
       alert("이메일 형식을 다시 확인해주세요. ex) s2x0xx@gsm.hs.kr");
     }
